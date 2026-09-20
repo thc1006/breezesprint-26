@@ -1,4 +1,6 @@
-# BreezeSprint26 — Breeze-ASR-26 on Colab TPU
+# BreezeSprint26 — Taiwanese Hokkien Speech-to-Text on Colab TPU
+
+台語錄音轉中文文字：兩格 Colab Notebook，上傳後自動下載附時間戳的 TXT。使用 Breeze-ASR-26 與 JAX/XLA，無需 API key。
 
 > **v0.1.1 startup fix:** supports the official `<|nocaptions|>` token.
 > Replace both the repository sources and generated notebook; do not reuse the v0.1.0 notebook payload. [Details](docs/TOKENIZER_FIX.md).
