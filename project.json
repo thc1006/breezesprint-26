@@ -1,0 +1,68 @@
+{
+  "name": "BreezeSprint26",
+  "version": "0.1.1",
+  "repository": "thc1006/breezesprint-26",
+  "default_branch": "main",
+  "description": "Turn Taiwanese Hokkien (Taigi) recordings into timestamped Chinese text. Two-cell Google Colab TPU notebook using Breeze-ASR-26, JAX and automatic timestamped TXT downloads.",
+  "colab_url": "https://colab.research.google.com/github/thc1006/breezesprint-26/blob/main/BreezeSprint26.ipynb",
+  "homepage": "https://colab.research.google.com/github/thc1006/breezesprint-26/blob/main/BreezeSprint26.ipynb",
+  "optional_pages_url": "https://thc1006.github.io/breezesprint-26/",
+  "license": "MIT",
+  "model_license": "Apache-2.0",
+  "language": "Python",
+  "keywords": [
+    "breeze-asr-26",
+    "breeze-asr",
+    "whisper",
+    "whisper-large-v2",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "google-colab",
+    "colab-notebook",
+    "jax",
+    "xla",
+    "tpu",
+    "tpu-v5e",
+    "bfloat16",
+    "timestamped-transcript",
+    "traditional-chinese",
+    "taiwanese-hokkien",
+    "taigi"
+  ],
+  "capabilities": {
+    "input_language": "Taiwanese Hokkien (Taigi)",
+    "task": "transcribe",
+    "language_token": "zh",
+    "output_description": "Mandarin Chinese character rendering of Taigi speech; not native Taigi orthography or romanization",
+    "model": "MediaTek-Research/Breeze-ASR-26",
+    "model_revision": "26f44dc0e75a5044d81c27f8e9679a95619686b6",
+    "code_cells": 2,
+    "formats": [
+      "txt"
+    ],
+    "diarization": false,
+    "word_alignment": false,
+    "external_asr_api": false,
+    "cpu_asr_fallback": false,
+    "single_device_only": true,
+    "input_ui": "upload-only",
+    "automatic_download": true,
+    "result_archive": false,
+    "text_format": "srt-style-timestamped-txt-v1"
+  },
+  "evidence": {
+    "current_model_physical_tpu_run": false,
+    "current_model_full_pretrained_execution": false,
+    "live_colab_browser_tested": false,
+    "wer_cer_verified": false,
+    "speedup_measured": false,
+    "inherited_whispersprint_evidence": "Architecture/UI ancestry only; NOT a Breeze checkpoint validation."
+  },
+  "primary_sources": [
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-26",
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-26/tree/26f44dc0e75a5044d81c27f8e9679a95619686b6",
+    "https://arxiv.org/abs/2603.19259",
+    "https://docs.jax.dev/en/latest/benchmarking.html",
+    "https://research.google.com/colaboratory/faq.html"
+  ]
+}

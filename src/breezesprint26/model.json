@@ -1,0 +1,39 @@
+{
+  "revision": "26f44dc0e75a5044d81c27f8e9679a95619686b6",
+  "input_language": "Taiwanese Hokkien (Taigi)",
+  "output_description": "Mandarin Chinese character rendering of Taigi speech; not native Taigi orthography or romanization",
+  "weight_files": [
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors"
+  ],
+  "source_dtype": "F32",
+  "model_id": "MediaTek-Research/Breeze-ASR-26",
+  "preset": "breeze26",
+  "language_token": "zh",
+  "expected_architecture": {
+    "num_mel_bins": 80,
+    "d_model": 1280,
+    "encoder_layers": 32,
+    "decoder_layers": 32,
+    "encoder_attention_heads": 20,
+    "decoder_attention_heads": 20,
+    "encoder_ffn_dim": 5120,
+    "decoder_ffn_dim": 5120,
+    "max_source_positions": 1500,
+    "max_target_positions": 448,
+    "vocab_size": 51865
+  },
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "preprocessor_config.json",
+    "vocab.json",
+    "added_tokens.json",
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors",
+    "model.safetensors.index.json"
+  ],
+  "source_url": "https://huggingface.co/MediaTek-Research/Breeze-ASR-26/tree/26f44dc0e75a5044d81c27f8e9679a95619686b6",
+  "model_license": "Apache-2.0",
+  "selection_checked_date": "2026-09-21"
+}

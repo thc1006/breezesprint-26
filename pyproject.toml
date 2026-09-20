@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breezesprint-26"
+version = "0.1.1"
+description = "Turn Taiwanese Hokkien (Taigi) recordings into timestamped Chinese text. Two-cell JAX/TPU notebook with automatic TXT downloads."
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Hsiu-Chi Tsai"}]
+readme = "README.md"
+keywords = ["breeze-asr-26", "whisper", "jax", "tpu", "colab", "subtitles"]
+dependencies = ["jax==0.9.0.1", "jaxlib==0.9.0.1", "numpy==2.3.5", "scipy==1.17.0", "ml_dtypes==0.5.4", "safetensors==0.7.0", "huggingface-hub==0.36.0", "requests==2.32.5"]
+
+[project.optional-dependencies]
+tpu = ["libtpu==0.0.34"]
+
+[project.urls]
+Repository = "https://github.com/thc1006/breezesprint-26"
+Issues = "https://github.com/thc1006/breezesprint-26/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+breezesprint26 = ["model.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-ra"

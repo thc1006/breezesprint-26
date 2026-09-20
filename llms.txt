@@ -1,0 +1,13 @@
+# BreezeSprint26
+
+> Turn Taiwanese Hokkien (Taigi) recordings into timestamped Chinese text. Independent, experimental JAX/TPU integration; not an official model release.
+
+- [README](https://github.com/thc1006/breezesprint-26/blob/main/README.md): two-cell upload-to-TXT workflow.
+- [Model](https://github.com/thc1006/breezesprint-26/blob/main/docs/MODEL.md): MediaTek-Research/Breeze-ASR-26, fixed revision, language/output and integrity.
+- [Validation](https://github.com/thc1006/breezesprint-26/blob/main/docs/VALIDATION.md): what has/has not been tested.
+- [Notebook](https://colab.research.google.com/github/thc1006/breezesprint-26/blob/main/BreezeSprint26.ipynb): self-contained Colab notebook; requires actual TPU allocation.
+
+ASR-26 renders Taigi speech in Mandarin Chinese characters. It does not promise native Taigi orthography, Tâi-lô, or phonetic verbatim transcription. It is not a universal upgrade over ASR-25 for Mandarin.
+No live Breeze TPU measurement, WER/CER, word alignment or API is advertised.
+TXT contains segment timestamps. Audio is processed on Google Colab, not locally
+on the user's computer. Model weights are Apache-2.0; application code MIT.
